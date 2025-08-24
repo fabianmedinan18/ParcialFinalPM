@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inteligencia Artificial en el Cine</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+    }
+
+    header {
+      background: #111;
+      color: #00ffcc;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #00ffcc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url("Cine1.jpg") no-repeat center center/cover;
+      color: #fff;
+      text-align: right;
+      padding: 80px 40px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .info {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-left: 6px solid #00ffcc;
+      background: rgba(0,0,0,0.6);
+      border-radius: 10px;
+      text-align: justify;
+    }
+
+    .beneficios {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-top: 2px solid #00ffcc;
+    }
+
+    .card {
+      flex: 1;
+      background: #1b1b1b;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
+    .card h3 {
+      color: #00ffcc;
+    }
+
+    .ejemplos {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .ejemplos h2 {
+      margin-bottom: 30px;
+      color: #00ffcc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .grid img:hover {
+      transform: scale(1.08);
+    }
+
+    .tabla {
+      margin: 50px auto;
+      width: 80%;
+      border-collapse: collapse;
+      background: #1b1b1b;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .tabla th, .tabla td {
+      border: 1px solid #00ffcc;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .tabla th {
+      background: #00ffcc;
+      color: #111;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Inteligencia Artificial en el Cine</h1>
+    <nav>
+      <a href="#info">Información</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#ejemplos">Ejemplos</a>
+      <a href="#comparacion">Comparación</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>La Ciencia Ficción Hecha Realidad</h2>
+    <p>La inteligencia artificial ha transformado la pantalla grande y nuestras vidas.</p>
+  </section>
+
+  <section id="info" class="info">
+    <h2>¿Qué papel juega la IA en el cine?</h2>
+    <p>
+      La inteligencia artificial en el cine no solo aparece como temática en películas futuristas,
+      sino también como herramienta en producción, guionización y efectos especiales.
+      Desde clásicos como <em>2001: Odisea en el Espacio</em> hasta producciones modernas, la IA ha inspirado
+      mundos que mezclan la ciencia con la imaginación.
+    </p>
+  </section>
+
+  <section id="beneficios" class="beneficios">
+    <div class="card">
+      <h3>✔ Narrativas innovadoras</h3>
+      <p>Explora dilemas éticos y futuros posibles gracias a la IA.</p>
+    </div>
+    <div class="card">
+      <h3>✔ Producción avanzada</h3>
+      <p>Se utiliza IA en efectos visuales, doblaje y edición automática.</p>
+    </div>
+    <div class="card">
+      <h3>✔ Cercanía con el público</h3>
+      <p>Los espectadores se identifican con los retos humanos frente a la tecnología.</p>
+    </div>
+  </section>
+
+  <section id="ejemplos" class="ejemplos">
+    <h2>Películas destacadas</h2>
+    <div class="grid">
+      <img src="ia1.1.jpg" alt="2001 Odisea en el Espacio">
+      <img src="ia2.jpg" alt="Her">
+      <img src="ia3.jpg" alt="Ex Machina">
+    </div>
+  </section>
+
+  <section id="comparacion">
+    <h2 style="text-align:center; color:#00ffcc;">Comparación de películas con IA</h2>
+    <table class="tabla">
+      <tr>
+        <th>Película</th>
+        <th>Año</th>
+        <th>Tipo de IA</th>
+      </tr>
+      <tr>
+        <td>2001: Odisea en el Espacio</td>
+        <td>1968</td>
+        <td>Control de sistemas (HAL 9000)</td>
+      </tr>
+      <tr>
+        <td>Her</td>
+        <td>2013</td>
+        <td>Asistente virtual emocional</td>
+      </tr>
+      <tr>
+        <td>Ex Machina</td>
+        <td>2014</td>
+        <td>Robots humanoides</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cine & IA | Diseñado con pasión cinematográfica</p>
+  </footer>
+
+</body>
+</html>
